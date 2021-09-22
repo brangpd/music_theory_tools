@@ -114,10 +114,14 @@ class _PitchNameCalculationQuestionWidgetState
     }
 
     return Container(
-      child: Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: children),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Column(
+              mainAxisSize: MainAxisSize.min,
+              children: children),
+        ],
+      ),
     );
   }
 
